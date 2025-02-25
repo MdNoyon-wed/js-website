@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-webstie</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-700">
+  <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 ">
+    <header>
+      <nav class="flex justify-center items-center mt-10">
+        <div class=" relative flex justify-center items-center w-9/12 mt-12 mb-10">
+          
+          <img class="w-48 absolute" src="pic-1/pic-1.png">
+          <img class="w-16" src="pic-1/Vector (3).png">
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-gray-100  mx-10 rounded-xl p-10 ">
+
+      <form class="care-body">
+
+      <label class=" text-2xl font-semibold">Mobile Number</label>
+      <br>
+      <br>
+      <input id="number-input" value="01311456987" class="px-10 py-3 border-none  rounded-full bg-slate-200" placeholder="Enter your number" type="number">
+      <br>
+      <br>
+      <label class="text-2xl font-semibold">4 Digit Pin</label>
+      <br>
+      <br>
+      <input id="text-input" value="1234" class="px-10 py-3 rounded-full bg-slate-200 border-none  mb-5 " placeholder="Enter 4 Digit Pin" type="password">
+      </form>
+
+      <div>
+        <button id="login-btn" class="px-26 rounded-full py-3 bg-sky-600 text-2xl text-white ">Login</button>
+      </div>
+    </section>
+
+  </section>
+   
+  <script src="js/login.js"></script>
+</body>
+</html>

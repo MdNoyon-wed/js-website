@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-slate-700">
+  <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+    <header>
+      <nav class="flex justify-around items-center">
+          <img src="pic-1/Vector (3).png">
+          <div class="">
+          <h2 class="text-3xl font-bold">$<span id="onak-taka">4500</span></h2>
+          <p class="">Available Balance</p>
+        </div>
+        <button class="btn">Log Out</button>
+      </nav>
+
+      <section class="mt-10">
+        <h1 class="text-2xl ml-4 mt-10 font-bold ">🔥 Welcome to Payooo!</h1>
+        <p class="text-gray-500 ml-4 -5">Enjoy easy and convenient financial
+           services with us.Cashout <br>charge is low and </p>
+
+
+           <div class="flex justify-center mt-10 gap-3">
+
+           <div id="Money" class="items-center py-8 px-4 border-2 rounded-lg" >
+            <img class=" ml-7" src="pic-1/Group.png">
+            <p class="mt-2">Add money</p>
+           </div>
+           <div id="cashout-money" class="items-center py-8 px-4 border-2 rounded-lg" >
+            <img class=" ml-7" src="pic-1/send 1.png">
+            <p class="m-2"> Cashout </p>
+           </div>
+           <div class="items-center py-8 px-4 border-2 rounded-lg" >
+            <img class=" ml-7" src="pic-1/transaction 1.png">
+            <p class="mt-2">Transactions</p>
+           </div>
+
+           </div>
+
+           <div class="flex justify-center mt-5 gap-3">
+
+            <div class="items-center py-8 px-4 border-2 rounded-lg" >
+              <img class=" ml-7" src="pic-1/financial 1.png">
+              <p class="mt-2">Get - Bonus</p>
+             </div>
+             <div class="items-center py-8 px-4 border-2 rounded-lg" >
+              <img class=" ml-7" src="pic-1/purse 1.png">
+              <p class="m-2">Pay - Bill  </p>
+             </div>
+             <div class="items-center py-8 px-4 border-2 rounded-lg" >
+              <img class=" ml-7" src="pic-1/transaction 1.png">
+              <p class="mt-2">Transactions</p>
+             </div>
+
+
+           </div>
+
+           <section id="add-money-main" class="">
+            <h2>Add money</h2>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <legend>Select Bank </legend>
+                  <select class="select">
+                    <option disabled selected>select bank</option>
+                    <option value="bkash">bKash</option>
+                    <option value="Nagad">Nagad</option>
+                    <option value="dbbl">DBBL</option>
+                  </select>
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Acount number</label>
+                    <input value="01311456987" id="Acount-number" 
+                    type="number" maxlength="11" class="input"
+                     placeholder="type your number" required>
+
+                     <label class="fieldset-label">Amount to Add</label>
+
+                     <input  id="Amount-taka" 
+                     type="number" maxlength="11" class="input"
+                      placeholder="Add Amount to withdraw" required>
+
+                      <label class="fieldset-label">Pin Number</label>
+
+                      <input value="1234"  id="code-pin" 
+                      type="number" maxlength="11" class="input"
+                       placeholder="Enter 4 digit pin number" required>
+                       <div><a class="link link-hover">Forgot password</a></div>
+ 
+
+                        <button id="add-button" type="submit"
+                         class="btn btn-neutral bg-blue-700 mt-4">Add money</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </section> 
+
+          <!-- next part -->
+           <section id="Cash-out">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <section class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <h1>Cash Out</h1>
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Agent Number</label>
+                    <input id="Agent-number" 
+                    type="number" maxlength="11" class="input"
+                     placeholder="Enter 11 digit number" required>
+      
+                     <label class="fieldset-label">Amount</label>
+      
+                     <input  id="Amount-taka" 
+                     type="number" maxlength="11" class="input"
+                      placeholder="Enter amount to withdraw" required>
+      
+                      <label class="fieldset-label">Pin Number</label>
+      
+                      <input  id="code-pin" 
+                      type="number" maxlength="11" class="input"
+                       placeholder="Enter 4 digit pin number" required>
+                       <div><a class="link link-hover">Forgot password</a></div>
+      
+      
+                        <button id="add-button" type="submit"
+                         class="btn btn-neutral bg-blue-700 mt-4">Withdraw Money</button>
+                  </fieldset>
+                </div>
+              
+              </section>
+    
+            </div>
+           </section>
+      
+          
+
+      </section>
+
+    </header>
+  </section>
+   
+  <script src="js/add-money.js"></script>
+</body>
+</html>

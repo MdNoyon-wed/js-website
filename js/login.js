@@ -9,20 +9,21 @@
  
   const pin=document.getElementById("text-input")
   .value;
-  // const convertedPin=parseInt(pin)
+   const convertedPin=parseInt(pin)
+   
   
-  
-  if(newInput.length===11){
+  if(newInput.length === 11) {
     
-    if(pin==="1234"){
+    if(convertedPin===1234){
+      window.location.href="./new.html"
       
       }
     else{
-      after('pin tik nai')
+      alert("pin tik nai")
     }
   }
-  else{
-    after('need value acount number')
+  else{ 
+    alert("need value acount number")
   }
 
   

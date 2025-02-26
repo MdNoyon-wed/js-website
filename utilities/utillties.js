@@ -17,3 +17,9 @@ function setInnerTextByIDandValue(id,value){
   
 }
 
+function hendleToggle(id,status){
+  document.getElementById(id).style.display=status;
+ 
+  }
+ 
+

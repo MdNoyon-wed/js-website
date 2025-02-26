@@ -36,7 +36,7 @@
             <img class=" ml-7" src="pic-1/send 1.png">
             <p class="m-2"> Cashout </p>
            </div>
-           <div class="items-center py-8 px-4 border-2 rounded-lg" >
+           <div id="transaction-box" class="items-center py-8 px-4 border-2 rounded-lg" >
             <img class=" ml-7" src="pic-1/transaction 1.png">
             <p class="mt-2">Transactions</p>
            </div>
@@ -67,7 +67,7 @@
               <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                   <legend>Select Bank </legend>
-                  <select class="select">
+                  <select id="allbank">
                     <option disabled selected>select bank</option>
                     <option value="bkash">bKash</option>
                     <option value="Nagad">Nagad</option>
@@ -109,31 +109,39 @@
                   <h1>Cash Out</h1>
                   <fieldset class="fieldset">
                     <label class="fieldset-label">Agent Number</label>
-                    <input id="Agent-number" 
+                    <input value="01311456987" id="cas-number" 
                     type="number" maxlength="11" class="input"
                      placeholder="Enter 11 digit number" required>
       
                      <label class="fieldset-label">Amount</label>
       
-                     <input  id="Amount-taka" 
+                     <input  id="cas-amount" 
                      type="number" maxlength="11" class="input"
                       placeholder="Enter amount to withdraw" required>
       
                       <label class="fieldset-label">Pin Number</label>
       
-                      <input  id="code-pin" 
+                      <input value="1234"  id="cas-code" 
                       type="number" maxlength="11" class="input"
                        placeholder="Enter 4 digit pin number" required>
-                       <div><a class="link link-hover">Forgot password</a></div>
+                        
       
       
-                        <button id="add-button" type="submit"
+                        <button id="submit-button" type="submit"
                          class="btn btn-neutral bg-blue-700 mt-4">Withdraw Money</button>
                   </fieldset>
                 </div>
               
               </section>
     
+            </div>
+           </section>
+
+           <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-red-500 text-center p-3">Transfer Money</h1>
+
+            <div id="transaction-container">
+              
             </div>
            </section>
  
@@ -144,10 +152,10 @@
 
     </header>
   </section>
-   
+   <script src="js/cashout.js"></script>
   <script src="utilities/togol.js"></script>
   <script src="utilities/utillties.js"></script>
-  <!-- <script src="js/add-money.js"></script> -->
   <script src="add-money1.js"></script>
+  <script  src="js/Transactions.js"></script>
 </body>
 </html>

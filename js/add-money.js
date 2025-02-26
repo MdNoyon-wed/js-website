@@ -47,5 +47,8 @@
       }
 
     }
+    else{
+      alert("account number tik nai")
+    }
      
   })
